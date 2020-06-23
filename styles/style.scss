@@ -1,0 +1,290 @@
+$color-primary: #579c87;
+$color-secondary: #fdcb46;
+
+
+/* !!! Index !!! */ 
+
+#cards {
+    text-align: center;
+    width: 41%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 5%;
+    
+}
+
+.card-contenu {
+    border: 1px solid black ;
+    width: 18em;
+    height: 23em;
+}
+
+
+
+// Carte "La note enchantée"
+.menu_note {
+    background-color: #fcdfdb;
+    text-decoration: none;
+    .card-title1_title {
+        font-family: 'Devonshire', cursive;
+        font-weight: normal;
+        color: #3d1319;
+        margin-top: 20%;
+    }
+}
+
+.card-title1_menu {
+    font-family: 'Kalam', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #3d1319;
+}
+
+.note_music {
+    color: #3d1319;
+    font-size: 3em;
+    
+}
+
+// Carte "Le chic à la française" 
+.menu_chic {
+    background-color: #fff5fe;
+    text-decoration: none;
+    .card-title2_title {
+        font-family: 'Croissant One', cursive;
+        font-weight: normal;
+        padding-top: 40%;
+        font-size: 1.2em;
+        
+    }
+}
+
+.card-title2_menu {
+    font-family: 'PT Serif Caption', serif;
+    color: #c77412;
+    font-size: 2em;
+    font-weight: bold;
+}
+ 
+// Carte "Le délice des papilles" 
+.menu_delice {
+    background-color: #edefef;
+    text-decoration: none;
+    .card-title3_title {
+        font-family: 'Dancing Script', cursive;
+        font-weight: normal;
+        padding-top: 50%;
+        font-size: 1.5em;
+        
+    }
+}
+
+.card-title3_menu {
+    font-size: 2em;
+    color: #0887fb;
+}
+
+
+// Carte "La palette du goût"
+.menu_palette {
+    background-color: #fdfffd;
+    text-decoration: none;
+    color: #72bf56;
+    .card-title4_title {
+        font-family: 'Kaushan Script', cursive;
+        font-weight: normal;
+        padding-top: 50%;
+        font-size: 1.5em;
+    }
+}
+
+.card-title4_menu {
+    font-size: 2em;
+    color: #72bf56;
+    
+}
+
+
+// Prochainement
+#next {
+    text-align: center;
+}
+
+ .btn {
+    background-color: $color-primary;
+    color: $color-secondary;
+    font-family: 'Montserrat', Arial, sans-serif;
+    display: inline-block;
+    width: 35%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 0.5em;
+    font-size: 2.5rem;
+    
+    }
+
+.point{
+      
+      
+}
+
+
+
+
+
+/* !!! La note enchantée !!! */
+
+#page1{
+    font-family: 'Kalam', cursive;
+    margin: auto 0;
+    width: 100%;
+}
+
+header{
+    font-family: "Montserrat";
+    font-weight: bold;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    background-color: $color-primary;
+    font-size: 4em;
+    margin-bottom: 5%;
+    a{
+        margin: auto;
+        padding: 2%;
+        text-decoration: none;
+        color: $color-secondary;
+        
+    }
+}
+
+article h1{
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+// Note et titre h2 "La note enchantée"
+.menu_home{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fcdfdb;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_title {
+    margin-top: 8%;
+    i{
+        font-size: 5em;
+    }
+}
+
+h2{
+    font-size: 4em;
+    font-family: 'Devonshire', cursive;
+}
+
+
+// Ligne de séparation
+h3 {
+    color: black;
+    padding-top: 1%;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.3em;
+}
+
+h3:before, h3:after {
+        content:'';
+        width: 11em;
+        border-bottom: black solid;
+        display: inline-block;
+        vertical-align: middle;
+}
+
+h3:before {
+    margin-left:-100%;
+    margin-right: 2em;
+}
+
+h3:after {
+    margin-right:-100%;
+    margin-left: 2em;
+}
+
+
+// PART Menu
+.menu_entree {
+    width: 65%;
+    margin: auto;
+}
+
+.contenu_entree {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    margin-top: 5%;
+    padding: 2%;
+    background-color: $color-primary;
+    width: 96%;
+       a{
+            text-decoration: none;
+            color: $color-secondary;
+       }  
+}
+
+.final_note{
+    font-size: 3em;
+    text-align: center;
+    margin: 5%;
+}
+
+.final_note{
+    font-family: 'Devonshire', cursive;
+}
+
+// PART "Mentions légales - Contact"
+.wiggle:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
