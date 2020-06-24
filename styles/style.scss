@@ -3,11 +3,26 @@ $color-secondary: #fdcb46;
 
 
 /* !!! Index !!! */ 
+#cards{
+    
+}
 
-#cards {
-    text-align: center;
-    width: 41%;
-    margin: auto;
+header{
+    font-family: "Montserrat";
+    font-weight: bold;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    background-color: $color-primary;
+    font-size: 4em;
+    margin-bottom: 5%;
+    a{
+        margin: auto;
+        padding: 2%;
+        text-decoration: none;
+        color: $color-secondary;
+        
+    }
 }
 
 .container {
@@ -15,15 +30,16 @@ $color-secondary: #fdcb46;
     justify-content: space-between;
     margin: auto;
     padding-bottom: 5%;
-    
+    text-align: center;
+    width: 41%;
 }
 
 .card-contenu {
-    border: 1px solid black ;
+    
     width: 18em;
     height: 23em;
+    box-shadow: 1px -1px 34px -7px grey;
 }
-
 
 
 // Carte "La note enchantée"
@@ -48,7 +64,6 @@ $color-secondary: #fdcb46;
 .note_music {
     color: #3d1319;
     font-size: 3em;
-    
 }
 
 // Carte "Le chic à la française" 
@@ -60,7 +75,11 @@ $color-secondary: #fdcb46;
         font-weight: normal;
         padding-top: 40%;
         font-size: 1.2em;
-        
+
+        background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
@@ -85,6 +104,7 @@ $color-secondary: #fdcb46;
 }
 
 .card-title3_menu {
+    font-family: 'Kalam', cursive, sans-serif;
     font-size: 2em;
     color: #0887fb;
 }
@@ -100,10 +120,16 @@ $color-secondary: #fdcb46;
         font-weight: normal;
         padding-top: 50%;
         font-size: 1.5em;
+
+        background: linear-gradient(135deg, #3d923a, #beff7f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
 .card-title4_menu {
+    font-family: 'Kalam', cursive, sans-serif;
     font-size: 2em;
     color: #72bf56;
     
@@ -119,129 +145,27 @@ $color-secondary: #fdcb46;
     background-color: $color-primary;
     color: $color-secondary;
     font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
     display: inline-block;
-    width: 35%;
+    width: 25%;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
     border-radius: 0.5em;
-    font-size: 2.5rem;
+    font-size: 2rem;
     
     }
 
-.point{
-      
-      
+.point{ 
+      font-size: 1.2em;
 }
 
 
-
-
-
-/* !!! La note enchantée !!! */
-
-#page1{
-    font-family: 'Kalam', cursive;
-    margin: auto 0;
-    width: 100%;
-}
-
-header{
-    font-family: "Montserrat";
-    font-weight: bold;
-    display: flex;
-    z-index: 1;
-    width: 100%;
-    background-color: $color-primary;
-    font-size: 4em;
-    margin-bottom: 5%;
-    a{
-        margin: auto;
-        padding: 2%;
-        text-decoration: none;
-        color: $color-secondary;
-        
-    }
-}
-
-article h1{
-    font-family: "Open Sans",sans-serif;
-    text-align: center;
-    font-size: 2em;
-}
-
-
-// Note et titre h2 "La note enchantée"
-.menu_home{
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #fcdfdb;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.menu_title {
-    margin-top: 8%;
-    i{
-        font-size: 5em;
-    }
-}
-
-h2{
-    font-size: 4em;
-    font-family: 'Devonshire', cursive;
-}
-
-
-// Ligne de séparation
-h3 {
-    color: black;
-    padding-top: 1%;
-    text-align: center;
-    overflow: hidden;
-    font-size: 1.3em;
-}
-
-h3:before, h3:after {
-        content:'';
-        width: 11em;
-        border-bottom: black solid;
-        display: inline-block;
-        vertical-align: middle;
-}
-
-h3:before {
-    margin-left:-100%;
-    margin-right: 2em;
-}
-
-h3:after {
-    margin-right:-100%;
-    margin-left: 2em;
-}
-
-
-// PART Menu
-.menu_entree {
-    width: 65%;
-    margin: auto;
-}
-
-.contenu_entree {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.price {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
+// PART "Mentions légales - Contact"
 footer{
     display: flex;
     justify-content: space-between;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
     font-size: 2em;
     margin-top: 5%;
     padding: 2%;
@@ -253,17 +177,7 @@ footer{
        }  
 }
 
-.final_note{
-    font-size: 3em;
-    text-align: center;
-    margin: 5%;
-}
-
-.final_note{
-    font-family: 'Devonshire', cursive;
-}
-
-// PART "Mentions légales - Contact"
+// Animations wiggle Mentions légales - Contact
 .wiggle:hover {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
@@ -288,3 +202,343 @@ footer{
       transform: translate3d(4px, 0, 0);
     }
   }
+
+
+// Animations cartes menus
+@keyframes animations{
+    0%{
+        font-size: 1.5em;
+        opacity: 1;
+    }
+    100%{
+        font-size: 2.5em;
+        opacity: .5;
+    }
+}
+
+.card-contenu
+    :hover {
+    animation: animations 2s ease-in-out forwards;
+    animation-name: animations;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+// Animations bouton - points "Prochainement..."
+@keyframes blink {
+    0% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+  
+.point {
+    animation-name: blink;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  
+.point:nth-child(2) {
+    animation-delay: .5s;
+  }
+  
+.point:nth-child(3) {
+    animation-delay: .9s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!! LA NOTE ENCHANTEE !!! */
+
+
+// Titre générique menu
+article h1{
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+// Note et titre h2 "La note enchantée"
+.menu_home1 {
+    font-family: 'Kalam';
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: #fcdfdb;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px -1px 34px -7px grey;
+}
+
+.menu_title1 {
+    margin-top: 10%;
+    margin-bottom: 3%;
+    line-height: 3%;
+    i{
+        font-size: 5em;
+    }
+}
+
+.menu_title1_title{
+    font-weight: normal;
+    font-size: 4em;
+    font-family: 'Devonshire', cursive;
+}
+
+
+// Ligne de séparation
+.line1 {
+    color: black;
+    padding-top: 1%;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.5em;
+}
+
+.line1:before, .line1:after {
+        content:'';
+        width: 9em;
+        border-bottom: black solid;
+        display: inline-block;
+        vertical-align: middle;
+}
+
+.line1:before {
+    margin-left:-100%;
+    margin-right: 2em;
+}
+
+.line1:after {
+    margin-right:-100%;
+    margin-left: 2em;
+}
+
+
+
+
+
+// PART Menu
+.menu_entree {
+    width: 65%;
+    margin: auto;
+    line-height: 50%;
+}
+
+.contenu_entree1 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.final_note{
+    font-size: 3em;
+    text-align: center;
+    margin: 5%;
+}
+
+.final_note{
+    font-family: 'Devonshire', cursive;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* !!! LE CHIC A LA FRANCAISE !!! */ 
+
+  
+.menu_home2 {
+    font-family: 'Libre Baskerville', serif;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 7%;
+    text-align: center;
+    background-color: #fff5fe;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px -1px 34px -7px grey;
+}
+
+.menu_title2{
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-size: 2em;
+    
+    background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contenu_entree2 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.underline2 {
+    margin-bottom: 3%;
+}
+
+.menu2_part1 {
+    margin-bottom: 3%;
+    color: #c67412;
+}
+
+.menu2_part2 {
+    margin-bottom: 3%;
+    color: #a56799;
+}
+
+.menu2_part3 {
+    color: #6e4ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!! LE DELICE DES PAPILLES !!! */
+
+.menu_home3 {
+    font-family: 'Libre Baskerville', serif;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 7%;
+    text-align: center;
+    background-color: #edefef;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px -1px 34px -7px grey;
+}
+
+.menu_title3 {
+    font-family: 'Dancing Script', cursive;
+    color: #0887fb;
+    font-size: 3em;
+    margin-top: 4%;
+}
+
+.contenu_entree3 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.underline3 {
+    font-family: 'Satisfy', cursive;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+.contenu_entree3 {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!! LA PALETTE DU GOUT !!! */ 
+
+.menu_home4 {
+    font-family: 'Kaushan Script', cursive;
+    background-color: #fdfffd;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 7%;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px -1px 34px -7px grey;
+}
+
+.menu_title4 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3em;
+    margin-top: 4%;
+    background: linear-gradient(135deg, #3d923a, #beff7f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.contenu_entree4 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.3em;
+    font-weight: normal;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+

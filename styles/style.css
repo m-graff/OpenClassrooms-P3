@@ -1,9 +1,22 @@
-@charset "UTF-8";
 /* !!! Index !!! */
-#cards {
-  text-align: center;
-  width: 41%;
+header {
+  font-family: "Montserrat";
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  background-color: #579c87;
+  font-size: 4em;
+  margin-bottom: 5%;
+}
+
+header a {
   margin: auto;
+  padding: 2%;
+  text-decoration: none;
+  color: #fdcb46;
 }
 
 .container {
@@ -15,12 +28,15 @@
           justify-content: space-between;
   margin: auto;
   padding-bottom: 5%;
+  text-align: center;
+  width: 41%;
 }
 
 .card-contenu {
-  border: 1px solid black;
   width: 18em;
   height: 23em;
+  -webkit-box-shadow: 1px -1px 34px -7px grey;
+          box-shadow: 1px -1px 34px -7px grey;
 }
 
 .menu_note {
@@ -57,6 +73,10 @@
   font-weight: normal;
   padding-top: 40%;
   font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-title2_menu {
@@ -79,6 +99,7 @@
 }
 
 .card-title3_menu {
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: 2em;
   color: #0887fb;
 }
@@ -94,9 +115,14 @@
   font-weight: normal;
   padding-top: 50%;
   font-size: 1.5em;
+  background: linear-gradient(135deg, #3d923a, #beff7f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-title4_menu {
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: 2em;
   color: #72bf56;
 }
@@ -109,119 +135,16 @@
   background-color: #579c87;
   color: #fdcb46;
   font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
   display: inline-block;
-  width: 35%;
+  width: 25%;
   text-align: center;
-  padding: 2%;
+  padding: 1%;
   border-radius: 0.5em;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
-/* !!! La note enchantée !!! */
-#page1 {
-  font-family: 'Kalam', cursive;
-  margin: auto 0;
-  width: 100%;
-}
-
-header {
-  font-family: "Montserrat";
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 1;
-  width: 100%;
-  background-color: #579c87;
-  font-size: 4em;
-  margin-bottom: 5%;
-}
-
-header a {
-  margin: auto;
-  padding: 2%;
-  text-decoration: none;
-  color: #fdcb46;
-}
-
-article h1 {
-  font-family: "Open Sans",sans-serif;
-  text-align: center;
-  font-size: 2em;
-}
-
-.menu_home {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #fcdfdb;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.menu_title {
-  margin-top: 8%;
-}
-
-.menu_title i {
-  font-size: 5em;
-}
-
-h2 {
-  font-size: 4em;
-  font-family: 'Devonshire', cursive;
-}
-
-h3 {
-  color: black;
-  padding-top: 1%;
-  text-align: center;
-  overflow: hidden;
-  font-size: 1.3em;
-}
-
-h3:before, h3:after {
-  content: '';
-  width: 11em;
-  border-bottom: black solid;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-h3:before {
-  margin-left: -100%;
-  margin-right: 2em;
-}
-
-h3:after {
-  margin-right: -100%;
-  margin-left: 2em;
-}
-
-.menu_entree {
-  width: 65%;
-  margin: auto;
-}
-
-.contenu_entree {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.price {
-  font-weight: bold;
+.point {
   font-size: 1.2em;
 }
 
@@ -232,6 +155,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
   font-size: 2em;
   margin-top: 5%;
   padding: 2%;
@@ -242,16 +167,6 @@ footer {
 footer a {
   text-decoration: none;
   color: #fdcb46;
-}
-
-.final_note {
-  font-size: 3em;
-  text-align: center;
-  margin: 5%;
-}
-
-.final_note {
-  font-family: 'Devonshire', cursive;
 }
 
 .wiggle:hover {
@@ -301,5 +216,348 @@ footer a {
     -webkit-transform: translate3d(4px, 0, 0);
             transform: translate3d(4px, 0, 0);
   }
+}
+
+@-webkit-keyframes animations {
+  0% {
+    font-size: 1.5em;
+    opacity: 1;
+  }
+  100% {
+    font-size: 2.5em;
+    opacity: .5;
+  }
+}
+
+@keyframes animations {
+  0% {
+    font-size: 1.5em;
+    opacity: 1;
+  }
+  100% {
+    font-size: 2.5em;
+    opacity: .5;
+  }
+}
+
+.card-contenu
+:hover {
+  -webkit-animation: animations 2s ease-in-out forwards;
+          animation: animations 2s ease-in-out forwards;
+  -webkit-animation-name: animations;
+          animation-name: animations;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.point {
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.point:nth-child(2) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.point:nth-child(3) {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+
+/* !!! LA NOTE ENCHANTEE !!! */
+article h1 {
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+
+.menu_home1 {
+  font-family: 'Kalam';
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  text-align: center;
+  background-color: #fcdfdb;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1px -1px 34px -7px grey;
+          box-shadow: 1px -1px 34px -7px grey;
+}
+
+.menu_title1 {
+  margin-top: 10%;
+  margin-bottom: 3%;
+  line-height: 3%;
+}
+
+.menu_title1 i {
+  font-size: 5em;
+}
+
+.menu_title1_title {
+  font-weight: normal;
+  font-size: 4em;
+  font-family: 'Devonshire', cursive;
+}
+
+.line1 {
+  color: black;
+  padding-top: 1%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+
+.line1:before, .line1:after {
+  content: '';
+  width: 9em;
+  border-bottom: black solid;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.line1:before {
+  margin-left: -100%;
+  margin-right: 2em;
+}
+
+.line1:after {
+  margin-right: -100%;
+  margin-left: 2em;
+}
+
+.menu_entree {
+  width: 65%;
+  margin: auto;
+  line-height: 50%;
+}
+
+.contenu_entree1 {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.final_note {
+  font-size: 3em;
+  text-align: center;
+  margin: 5%;
+}
+
+.final_note {
+  font-family: 'Devonshire', cursive;
+  font-weight: normal;
+}
+
+/* !!! LE CHIC A LA FRANCAISE !!! */
+.menu_home2 {
+  font-family: 'Libre Baskerville', serif;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 7%;
+  text-align: center;
+  background-color: #fff5fe;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1px -1px 34px -7px grey;
+          box-shadow: 1px -1px 34px -7px grey;
+}
+
+.menu_title2 {
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  font-size: 2em;
+  background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contenu_entree2 {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.underline2 {
+  margin-bottom: 3%;
+}
+
+.menu2_part1 {
+  margin-bottom: 3%;
+  color: #c67412;
+}
+
+.menu2_part2 {
+  margin-bottom: 3%;
+  color: #a56799;
+}
+
+.menu2_part3 {
+  color: #6e4ccc;
+}
+
+/* !!! LE DELICE DES PAPILLES !!! */
+.menu_home3 {
+  font-family: 'Libre Baskerville', serif;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 7%;
+  text-align: center;
+  background-color: #edefef;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1px -1px 34px -7px grey;
+          box-shadow: 1px -1px 34px -7px grey;
+}
+
+.menu_title3 {
+  font-family: 'Dancing Script', cursive;
+  color: #0887fb;
+  font-size: 3em;
+  margin-top: 4%;
+}
+
+.contenu_entree3 {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.underline3 {
+  font-family: 'Satisfy', cursive;
+  font-weight: normal;
+  font-size: 1.3em;
+}
+
+.contenu_entree3 {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.3em;
+}
+
+/* !!! LA PALETTE DU GOUT !!! */
+.menu_home4 {
+  font-family: 'Kaushan Script', cursive;
+  background-color: #fdfffd;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 7%;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1px -1px 34px -7px grey;
+          box-shadow: 1px -1px 34px -7px grey;
+}
+
+.menu_title4 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3em;
+  margin-top: 4%;
+  background: linear-gradient(135deg, #3d923a, #beff7f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contenu_entree4 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.3em;
+  font-weight: normal;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
