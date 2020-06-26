@@ -1,6 +1,10 @@
+body {
+  margin: 0;
+}
+
 /* !!! Index !!! */
 header {
-  font-family: "Montserrat";
+  font-family: "Arial black";
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,22 +37,28 @@ header a {
 }
 
 .card-contenu {
-  width: 18em;
-  height: 23em;
-  -webkit-box-shadow: 1px -1px 34px -7px grey;
-          box-shadow: 1px -1px 34px -7px grey;
+  width: 40vh;
 }
 
 .menu_note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1px -1px 34px -7px grey;
+          box-shadow: 1px -1px 34px -7px grey;
   background-color: #fcdfdb;
   text-decoration: none;
+  height: 23em;
 }
 
 .menu_note .card-title1_title {
   font-family: 'Devonshire', cursive;
   font-weight: normal;
   color: #3d1319;
-  margin-top: 20%;
+  line-height: 5%;
 }
 
 .card-title1_menu {
@@ -59,11 +69,18 @@ header a {
 }
 
 .note_music {
-  color: #3d1319;
-  font-size: 3em;
+  width: 15%;
 }
 
 .menu_chic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1px -1px 34px -7px grey;
+          box-shadow: 1px -1px 34px -7px grey;
   background-color: #fff5fe;
   text-decoration: none;
 }
@@ -71,7 +88,6 @@ header a {
 .menu_chic .card-title2_title {
   font-family: 'Croissant One', cursive;
   font-weight: normal;
-  padding-top: 40%;
   font-size: 1.2em;
   background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
   -webkit-background-clip: text;
@@ -87,6 +103,15 @@ header a {
 }
 
 .menu_delice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 23em;
+  -webkit-box-shadow: 1px -1px 34px -7px grey;
+          box-shadow: 1px -1px 34px -7px grey;
   background-color: #edefef;
   text-decoration: none;
 }
@@ -94,7 +119,6 @@ header a {
 .menu_delice .card-title3_title {
   font-family: 'Dancing Script', cursive;
   font-weight: normal;
-  padding-top: 50%;
   font-size: 1.5em;
 }
 
@@ -105,6 +129,15 @@ header a {
 }
 
 .menu_palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 23em;
+  -webkit-box-shadow: 1px -1px 34px -7px grey;
+          box-shadow: 1px -1px 34px -7px grey;
   background-color: #fdfffd;
   text-decoration: none;
   color: #72bf56;
@@ -113,7 +146,6 @@ header a {
 .menu_palette .card-title4_title {
   font-family: 'Kaushan Script', cursive;
   font-weight: normal;
-  padding-top: 50%;
   font-size: 1.5em;
   background: linear-gradient(135deg, #3d923a, #beff7f);
   -webkit-background-clip: text;
@@ -129,6 +161,11 @@ header a {
 
 #next {
   text-align: center;
+  margin-bottom: 10%;
+}
+
+main {
+  margin-bottom: 10%;
 }
 
 .btn {
@@ -149,6 +186,10 @@ header a {
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,9 +200,8 @@ footer {
   font-weight: bold;
   font-size: 2em;
   margin-top: 5%;
-  padding: 2%;
+  padding: 1.3%;
   background-color: #579c87;
-  width: 96%;
 }
 
 footer a {
@@ -218,48 +258,12 @@ footer a {
   }
 }
 
-@-webkit-keyframes animations {
-  0% {
-    font-size: 1.5em;
-    opacity: 1;
-  }
-  100% {
-    font-size: 2.5em;
-    opacity: .5;
-  }
-}
-
-@keyframes animations {
-  0% {
-    font-size: 1.5em;
-    opacity: 1;
-  }
-  100% {
-    font-size: 2.5em;
-    opacity: .5;
-  }
-}
-
-.card-contenu
-:hover {
-  -webkit-animation: animations 2s ease-in-out forwards;
-          animation: animations 2s ease-in-out forwards;
-  -webkit-animation-name: animations;
-          animation-name: animations;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+.card-contenu:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0.4;
 }
 
 @-webkit-keyframes blink {
@@ -350,6 +354,10 @@ article h1 {
   font-family: 'Devonshire', cursive;
 }
 
+.note_music-menu1 {
+  width: 10%;
+}
+
 .line1 {
   color: black;
   padding-top: 1%;
@@ -359,8 +367,10 @@ article h1 {
 }
 
 .line1:before, .line1:after {
+  -webkit-clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
+          clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
   content: '';
-  width: 9em;
+  width: 20%;
   border-bottom: black solid;
   display: inline-block;
   vertical-align: middle;
@@ -368,12 +378,12 @@ article h1 {
 
 .line1:before {
   margin-left: -100%;
-  margin-right: 2em;
+  margin-right: 3%;
 }
 
 .line1:after {
   margin-right: -100%;
-  margin-left: 2em;
+  margin-left: 3%;
 }
 
 .menu_entree {
@@ -398,14 +408,16 @@ article h1 {
 }
 
 .final_note {
+  font-family: 'Devonshire', cursive;
+  font-weight: normal;
   font-size: 3em;
   text-align: center;
   margin: 5%;
 }
 
-.final_note {
-  font-family: 'Devonshire', cursive;
-  font-weight: normal;
+.note_music-menu2 {
+  width: 5%;
+  height: auto;
 }
 
 /* !!! LE CHIC A LA FRANCAISE !!! */
@@ -468,6 +480,34 @@ article h1 {
   color: #6e4ccc;
 }
 
+.line2 {
+  color: black;
+  padding-top: 1%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+
+.line2:before, .line2:after {
+  -webkit-clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
+          clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
+  content: '';
+  width: 20%;
+  border-bottom: black solid;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.line2:before {
+  margin-left: -100%;
+  margin-right: 3%;
+}
+
+.line2:after {
+  margin-right: -100%;
+  margin-left: 3%;
+}
+
 /* !!! LE DELICE DES PAPILLES !!! */
 .menu_home3 {
   font-family: 'Libre Baskerville', serif;
@@ -494,6 +534,10 @@ article h1 {
   color: #0887fb;
   font-size: 3em;
   margin-top: 4%;
+  background: linear-gradient(135deg, #0887fb, #3d95e7, #a1c7eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contenu_entree3 {

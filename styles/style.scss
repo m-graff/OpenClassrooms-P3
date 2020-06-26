@@ -1,14 +1,15 @@
 $color-primary: #579c87;
 $color-secondary: #fdcb46;
 
-
-/* !!! Index !!! */ 
-#cards{
-    
+body{
+    margin: 0;
 }
 
+/* !!! Index !!! */ 
+
+
 header{
-    font-family: "Montserrat";
+    font-family: "Arial black";
     font-weight: bold;
     display: flex;
     z-index: 1;
@@ -35,22 +36,23 @@ header{
 }
 
 .card-contenu {
-    
-    width: 18em;
-    height: 23em;
-    box-shadow: 1px -1px 34px -7px grey;
+    width: 40vh;
 }
 
 
 // Carte "La note enchantée"
 .menu_note {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px -1px 34px -7px grey;
     background-color: #fcdfdb;
     text-decoration: none;
+    height: 23em;
     .card-title1_title {
         font-family: 'Devonshire', cursive;
         font-weight: normal;
         color: #3d1319;
-        margin-top: 20%;
+        line-height: 5%;
     }
 }
 
@@ -61,19 +63,22 @@ header{
     color: #3d1319;
 }
 
+
+
 .note_music {
-    color: #3d1319;
-    font-size: 3em;
+    width: 15%;
 }
 
 // Carte "Le chic à la française" 
 .menu_chic {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px -1px 34px -7px grey;
     background-color: #fff5fe;
     text-decoration: none;
     .card-title2_title {
         font-family: 'Croissant One', cursive;
         font-weight: normal;
-        padding-top: 40%;
         font-size: 1.2em;
 
         background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
@@ -92,12 +97,15 @@ header{
  
 // Carte "Le délice des papilles" 
 .menu_delice {
+    display: flex;
+    align-items: center;
+    height: 23em;
+    box-shadow: 1px -1px 34px -7px grey;
     background-color: #edefef;
     text-decoration: none;
     .card-title3_title {
         font-family: 'Dancing Script', cursive;
         font-weight: normal;
-        padding-top: 50%;
         font-size: 1.5em;
         
     }
@@ -112,13 +120,16 @@ header{
 
 // Carte "La palette du goût"
 .menu_palette {
+    display: flex;
+    align-items: center;
+    height: 23em;
+    box-shadow: 1px -1px 34px -7px grey;
     background-color: #fdfffd;
     text-decoration: none;
     color: #72bf56;
     .card-title4_title {
         font-family: 'Kaushan Script', cursive;
         font-weight: normal;
-        padding-top: 50%;
         font-size: 1.5em;
 
         background: linear-gradient(135deg, #3d923a, #beff7f);
@@ -139,6 +150,11 @@ header{
 // Prochainement
 #next {
     text-align: center;
+    margin-bottom: 10%;
+}
+
+main {
+    margin-bottom: 10%;
 }
 
  .btn {
@@ -162,15 +178,18 @@ header{
 
 // PART "Mentions légales - Contact"
 footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: bold;
     font-size: 2em;
     margin-top: 5%;
-    padding: 2%;
+    padding: 1.3%;
     background-color: $color-primary;
-    width: 96%;
        a{
             text-decoration: none;
             color: $color-secondary;
@@ -205,28 +224,11 @@ footer{
 
 
 // Animations cartes menus
-@keyframes animations{
-    0%{
-        font-size: 1.5em;
-        opacity: 1;
-    }
-    100%{
-        font-size: 2.5em;
-        opacity: .5;
-    }
-}
 
-.card-contenu
-    :hover {
-    animation: animations 2s ease-in-out forwards;
-    animation-name: animations;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
+.card-contenu:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    opacity: 0.4;
 }
 
 
@@ -313,6 +315,12 @@ article h1{
     font-family: 'Devonshire', cursive;
 }
 
+.note_music-menu1 {
+    width: 10%;
+}
+
+
+
 
 // Ligne de séparation
 .line1 {
@@ -321,11 +329,15 @@ article h1{
     text-align: center;
     overflow: hidden;
     font-size: 1.5em;
+
+    
 }
 
 .line1:before, .line1:after {
+    clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
+
         content:'';
-        width: 9em;
+        width: 20%;
         border-bottom: black solid;
         display: inline-block;
         vertical-align: middle;
@@ -333,12 +345,12 @@ article h1{
 
 .line1:before {
     margin-left:-100%;
-    margin-right: 2em;
+    margin-right: 3%;
 }
 
 .line1:after {
     margin-right:-100%;
-    margin-left: 2em;
+    margin-left: 3%;
 }
 
 
@@ -364,15 +376,19 @@ article h1{
 }
 
 .final_note{
+    
+    font-family: 'Devonshire', cursive;
+    font-weight: normal;
     font-size: 3em;
     text-align: center;
     margin: 5%;
 }
 
-.final_note{
-    font-family: 'Devonshire', cursive;
-    font-weight: normal;
+.note_music-menu2 {
+    width: 5%;
+    height: auto;
 }
+
 
 
 
@@ -442,7 +458,35 @@ article h1{
 }
 
 
+.line2 {
+    color: black;
+    padding-top: 1%;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.5em;
 
+    
+}
+
+.line2:before, .line2:after {
+    clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
+
+        content:'';
+        width: 20%;
+        border-bottom: black solid;
+        display: inline-block;
+        vertical-align: middle;
+}
+
+.line2:before {
+    margin-left:-100%;
+    margin-right: 3%;
+}
+
+.line2:after {
+    margin-right:-100%;
+    margin-left: 3%;
+}
 
 
 
@@ -475,6 +519,11 @@ article h1{
     color: #0887fb;
     font-size: 3em;
     margin-top: 4%;
+
+    background: linear-gradient(135deg, #0887fb,#3d95e7, #a1c7eb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contenu_entree3 {
