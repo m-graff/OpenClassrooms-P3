@@ -340,7 +340,7 @@ article h1 {
 
 .menu_title1 {
   margin-top: 10%;
-  margin-bottom: 3%;
+  margin-bottom: 8%;
   line-height: 3%;
 }
 
@@ -358,37 +358,78 @@ article h1 {
   width: 10%;
 }
 
+.menu_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 5%;
+}
+
+.trait_note1 {
+  width: 31%;
+  height: 5%;
+}
+
+.trait_note2 {
+  width: 30%;
+  height: 5%;
+}
+
+.trait_note3 {
+  width: 28%;
+  height: 5%;
+}
+
+.trait_chic {
+  width: 25%;
+  height: 100%;
+}
+
+.trait_delice {
+  width: 30%;
+  height: 5%;
+}
+
+.trait_palette {
+  width: 35%;
+  height: 3vh;
+}
+
+/*
 .line1 {
-  color: black;
-  padding-top: 1%;
-  text-align: center;
-  overflow: hidden;
-  font-size: 1.5em;
-}
+    color: black;
+    padding-top: 1%;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.5em;
 
+    
+}
 .line1:before, .line1:after {
-  -webkit-clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
-          clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
-  content: '';
-  width: 20%;
-  border-bottom: black solid;
-  display: inline-block;
-  vertical-align: middle;
-}
+    clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
 
+        content:'';
+        width: 20%;
+        border-bottom: black solid;
+        display: inline-block;
+        vertical-align: middle;
+}
 .line1:before {
-  margin-left: -100%;
-  margin-right: 3%;
+    margin-left:-100%;
+    margin-right: 3%;
 }
-
 .line1:after {
-  margin-right: -100%;
-  margin-left: 3%;
+    margin-right:-100%;
+    margin-left: 3%;
 }
-
+*/
 .menu_entree {
   width: 65%;
   margin: auto;
+  padding-bottom: 3%;
   line-height: 50%;
 }
 
