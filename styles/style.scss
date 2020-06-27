@@ -5,6 +5,9 @@ body{
     margin: 0;
 }
 
+
+
+
 /* !!! Index !!! */ 
 
 
@@ -322,21 +325,16 @@ article h1{
 
 
 
+
+
+
+
 // Ligne de séparation
-
-
-
-
-
-
-
 
 .menu_content {
     display: flex;
-   
     justify-content: center;
     line-height: 5%;
-    
 }
 
 .trait_note1 {
@@ -352,7 +350,38 @@ article h1{
     height: 5%;
 }
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.line1 {
+    position: relative;
+    padding-bottom: 1%;
+  }
+   
+  .line1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    background: #3c1218;
+    transition: width 400ms ease-in-out;
+  }
+   
+  .line1:hover:after {
+    width: 100%;
+  }
 
 
 
@@ -373,20 +402,46 @@ article h1{
 }
 
 
+/* 
+.line1:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 5px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5 ease
+}
+.line1:hover:after {
+    width: 90%;
+    background: #444;
+}
+*/ 
 
 
 
+/*
+.line1 {
+    transition: border 0.3s ease-in-out;
+    border-bottom: 5px solid transparent;
+}
+.line1:hover {
+    border-color: #3c1218;
+}
+*/ 
 
 
 
+/*
+.line1 {
+    background: linear-gradient(to top, #3c1218 0%, #3c1218 30%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
 
-
-
-
-
-
-
-
+.line1:hover {
+    background-size: 100% 100%;
+}
+*/ 
 
 
 
@@ -397,8 +452,6 @@ article h1{
     text-align: center;
     overflow: hidden;
     font-size: 1.5em;
-
-    
 }
 .line1:before, .line1:after {
     clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
@@ -657,3 +710,37 @@ article h1{
     justify-content: space-between;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!! MENTIONS LEGALES !!! */ 
+
+#mentions_bloc {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.mentions_title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.mentions_content {
+    margin: 8%;
+    text-align: center;
+    font-size: 1.1em;
+}
