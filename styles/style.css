@@ -415,7 +415,7 @@ article h1 {
 }
 
 .trait_palette {
-  width: 35%;
+  width: 30%;
   height: 3vh;
 }
 
@@ -556,13 +556,32 @@ article h1 {
           justify-content: space-between;
 }
 
-.underline2 {
-  margin-bottom: 3%;
-}
-
 .menu2_part1 {
   margin-bottom: 3%;
   color: #c67412;
+}
+
+.line2_p1 {
+  position: relative;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.line2_p1:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: .5vh;
+  background: #c67412;
+  -webkit-transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
+}
+
+.line2_p1:hover:after {
+  width: 100%;
 }
 
 .menu2_part2 {
@@ -570,36 +589,54 @@ article h1 {
   color: #a56799;
 }
 
+.line2_p2 {
+  position: relative;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.line2_p2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: .5vh;
+  background: #a56799;
+  -webkit-transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
+}
+
+.line2_p2:hover:after {
+  width: 100%;
+}
+
 .menu2_part3 {
   color: #6e4ccc;
 }
 
-.line2 {
-  color: black;
-  padding-top: 1%;
-  text-align: center;
-  overflow: hidden;
-  font-size: 1.5em;
+.line2_p3 {
+  position: relative;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
-.line2:before, .line2:after {
-  -webkit-clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
-          clip-path: polygon(32% 53%, 73% 50%, 100% 75%, 55% 91%, 0% 75%, 12% 61%);
+.line2_p3:after {
   content: '';
-  width: 20%;
-  border-bottom: black solid;
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: .5vh;
+  background: #6e4ccc;
+  -webkit-transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
 }
 
-.line2:before {
-  margin-left: -100%;
-  margin-right: 3%;
-}
-
-.line2:after {
-  margin-right: -100%;
-  margin-left: 3%;
+.line2_p3:hover:after {
+  width: 100%;
 }
 
 /* !!! LE DELICE DES PAPILLES !!! */
@@ -644,15 +681,78 @@ article h1 {
           justify-content: space-between;
 }
 
-.underline3 {
-  font-family: 'Satisfy', cursive;
-  font-weight: normal;
-  font-size: 1.3em;
-}
-
 .contenu_entree3 {
   font-family: 'Satisfy', cursive;
   font-size: 1.3em;
+}
+
+.line3_p1 {
+  position: relative;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.line3_p1:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: .5vh;
+  background: #0228dd;
+  -webkit-transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
+}
+
+.line3_p1:hover:after {
+  width: 100%;
+}
+
+.line3_p2 {
+  position: relative;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.line3_p2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: .5vh;
+  background: #0670f3;
+  -webkit-transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
+}
+
+.line3_p2:hover:after {
+  width: 100%;
+}
+
+.line3_p3 {
+  position: relative;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.line3_p3:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: .5vh;
+  background: #229df9;
+  -webkit-transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
+}
+
+.line3_p3:hover:after {
+  width: 100%;
 }
 
 /* !!! LA PALETTE DU GOUT !!! */
@@ -697,6 +797,29 @@ article h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.line4 {
+  position: relative;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.line4:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: .5vh;
+  background: #3c1218;
+  -webkit-transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
+}
+
+.line4:hover:after {
+  width: 100%;
 }
 
 /* !!! MENTIONS LEGALES !!! */
