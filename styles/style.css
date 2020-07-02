@@ -1,5 +1,33 @@
+/* 
+@mixin line-menu {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    transition: width 400ms ease-in-out;
+}
+*/
 body {
   margin: 0;
+}
+
+main {
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 944px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu_note {
+    margin-bottom: 5%;
+    height: 5em;
+  }
 }
 
 /* !!! Index !!! */
@@ -21,6 +49,12 @@ header a {
   padding: 2%;
   text-decoration: none;
   color: #fdcb46;
+}
+
+@media screen and (max-width: 570px) {
+  header a {
+    font-size: .8em;
+  }
 }
 
 .container {
@@ -54,22 +88,22 @@ header a {
   height: 23em;
 }
 
-.menu_note .card-title1_title {
+.menu_note .note_music {
+  width: 15%;
+}
+
+.card-title1 {
   font-family: 'Devonshire', cursive;
   font-weight: normal;
   color: #3d1319;
   line-height: 5%;
 }
 
-.card-title1_menu {
+.card-title1--menu {
   font-family: 'Kalam', cursive, sans-serif;
   font-weight: bold;
   font-size: 2em;
   color: #3d1319;
-}
-
-.note_music {
-  width: 15%;
 }
 
 .menu_chic {
@@ -85,7 +119,7 @@ header a {
   text-decoration: none;
 }
 
-.menu_chic .card-title2_title {
+.card-title2 {
   font-family: 'Croissant One', cursive;
   font-weight: normal;
   font-size: 1.2em;
@@ -95,7 +129,7 @@ header a {
   -webkit-text-fill-color: transparent;
 }
 
-.card-title2_menu {
+.card-title2--menu {
   font-family: 'PT Serif Caption', serif;
   color: #c77412;
   font-size: 2em;
@@ -116,13 +150,13 @@ header a {
   text-decoration: none;
 }
 
-.menu_delice .card-title3_title {
+.card-title3 {
   font-family: 'Dancing Script', cursive;
   font-weight: normal;
   font-size: 1.5em;
 }
 
-.card-title3_menu {
+.card-title3--menu {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: 2em;
   color: #0887fb;
@@ -143,7 +177,7 @@ header a {
   color: #72bf56;
 }
 
-.menu_palette .card-title4_title {
+.card-title4 {
   font-family: 'Kaushan Script', cursive;
   font-weight: normal;
   font-size: 1.5em;
@@ -153,7 +187,7 @@ header a {
   -webkit-text-fill-color: transparent;
 }
 
-.card-title4_menu {
+.card-title4--menu {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: 2em;
   color: #72bf56;
@@ -161,10 +195,6 @@ header a {
 
 #next {
   text-align: center;
-  margin-bottom: 10%;
-}
-
-main {
   margin-bottom: 10%;
 }
 
@@ -183,6 +213,18 @@ main {
 
 .point {
   font-size: 1.2em;
+  -webkit-animation: blink infinite both 1.8s;
+          animation: blink infinite both 1.8s;
+}
+
+.point:nth-child(2) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.point:nth-child(3) {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
 }
 
 footer {
@@ -290,27 +332,6 @@ footer a {
   }
 }
 
-.point {
-  -webkit-animation-name: blink;
-          animation-name: blink;
-  -webkit-animation-duration: 1.8s;
-          animation-duration: 1.8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.point:nth-child(2) {
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-}
-
-.point:nth-child(3) {
-  -webkit-animation-delay: .9s;
-          animation-delay: .9s;
-}
-
 /* !!! LA NOTE ENCHANTEE !!! */
 article h1 {
   font-family: "Open Sans",sans-serif;
@@ -358,7 +379,7 @@ article h1 {
   width: 10%;
 }
 
-.menu_content {
+.menu_content1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,26 +387,19 @@ article h1 {
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 5%;
+  width: 65%;
+  margin: auto;
 }
 
-.trait_note1 {
-  width: 31%;
-  height: 5%;
-}
-
-.trait_note2 {
+.trait_note {
   width: 30%;
-  height: 5%;
-}
-
-.trait_note3 {
-  width: 28%;
   height: 5%;
 }
 
 .line1 {
   position: relative;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
+  margin: auto;
 }
 
 .line1:after {
@@ -395,28 +409,13 @@ article h1 {
   bottom: 0;
   width: 0;
   height: .5vh;
-  background: #3c1218;
   -webkit-transition: width 400ms ease-in-out;
   transition: width 400ms ease-in-out;
+  background: #3c1218;
 }
 
 .line1:hover:after {
   width: 100%;
-}
-
-.trait_chic {
-  width: 25%;
-  height: 100%;
-}
-
-.trait_delice {
-  width: 30%;
-  height: 5%;
-}
-
-.trait_palette {
-  width: 30%;
-  height: 3vh;
 }
 
 /* 
@@ -496,7 +495,7 @@ article h1 {
           justify-content: space-between;
 }
 
-.price {
+.contenu_entree1 .price {
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -509,7 +508,7 @@ article h1 {
   margin: 5%;
 }
 
-.note_music-menu2 {
+.final_note .note_music-menu2 {
   width: 5%;
   height: auto;
 }
@@ -546,6 +545,11 @@ article h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.trait_chic {
+  width: 30%;
+  height: 100%;
+}
+
 .contenu_entree2 {
   list-style-type: none;
   display: -webkit-box;
@@ -556,16 +560,25 @@ article h1 {
           justify-content: space-between;
 }
 
+.menu_content2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 5%;
+  width: 90%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
 .menu2_part1 {
-  margin-bottom: 3%;
   color: #c67412;
 }
 
 .line2_p1 {
   position: relative;
   padding-bottom: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin: auto;
 }
 
 .line2_p1:after {
@@ -585,15 +598,13 @@ article h1 {
 }
 
 .menu2_part2 {
-  margin-bottom: 3%;
   color: #a56799;
 }
 
 .line2_p2 {
   position: relative;
   padding-bottom: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin: auto;
 }
 
 .line2_p2:after {
@@ -619,8 +630,7 @@ article h1 {
 .line2_p3 {
   position: relative;
   padding-bottom: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin: auto;
 }
 
 .line2_p3:after {
@@ -665,10 +675,16 @@ article h1 {
   color: #0887fb;
   font-size: 3em;
   margin-top: 4%;
+  margin-bottom: 3%;
   background: linear-gradient(135deg, #0887fb, #3d95e7, #a1c7eb);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.trait_delice {
+  width: 35%;
+  height: 5%;
 }
 
 .contenu_entree3 {
@@ -679,18 +695,25 @@ article h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.contenu_entree3 {
   font-family: 'Satisfy', cursive;
   font-size: 1.3em;
+}
+
+.menu_content3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 5%;
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
 
 .line3_p1 {
   position: relative;
   padding-bottom: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin: auto;
 }
 
 .line3_p1:after {
@@ -712,8 +735,7 @@ article h1 {
 .line3_p2 {
   position: relative;
   padding-bottom: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin: auto;
 }
 
 .line3_p2:after {
@@ -735,8 +757,7 @@ article h1 {
 .line3_p3 {
   position: relative;
   padding-bottom: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin: auto;
 }
 
 .line3_p3:after {
@@ -786,9 +807,14 @@ article h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.trait_palette {
+  width: 30%;
+  height: 3vh;
+}
+
 .contenu_entree4 {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 1.3em;
+  font-family: 'Tillana', cursive;
+  font-size: 1.2em;
   font-weight: normal;
   list-style-type: none;
   display: -webkit-box;
@@ -797,13 +823,23 @@ article h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 3%;
 }
 
 .line4 {
   position: relative;
-  padding-bottom: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-bottom: 4%;
+  margin: auto;
+}
+
+.menu_content4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 5%;
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
 }
 
 .line4:after {
@@ -830,7 +866,7 @@ article h1 {
   padding-bottom: 5%;
 }
 
-.mentions_title {
+#mentions_bloc .mentions_title {
   font-size: 2em;
   text-align: center;
 }
@@ -840,4 +876,6 @@ article h1 {
   text-align: center;
   font-size: 1.1em;
 }
+
+/* MEDIA QUERIES */
 /*# sourceMappingURL=style.css.map */
