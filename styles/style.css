@@ -19,14 +19,26 @@ main {
 
 @media screen and (max-width: 944px) {
   .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .menu_note {
-    margin-bottom: 5%;
-    height: 5em;
+    margin-top: 20%;
+    margin-bottom: 25%;
+  }
+  .menu_delice {
+    margin-top: 15%;
+    margin-bottom: 25%;
   }
 }
 
@@ -117,6 +129,7 @@ header a {
           box-shadow: 1px -1px 34px -7px grey;
   background-color: #fff5fe;
   text-decoration: none;
+  height: 23em;
 }
 
 .card-title2 {
@@ -194,6 +207,15 @@ header a {
 }
 
 #next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   margin-bottom: 10%;
 }
@@ -203,7 +225,6 @@ header a {
   color: #fdcb46;
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: bold;
-  display: inline-block;
   width: 25%;
   text-align: center;
   padding: 1%;
@@ -873,8 +894,12 @@ article h1 {
 
 .mentions_content {
   margin: 8%;
-  text-align: center;
+  text-align: justify;
   font-size: 1.1em;
+}
+
+.mentions_content h2 {
+  text-align: center;
 }
 
 /* MEDIA QUERIES */

@@ -27,21 +27,38 @@ main {
     margin-bottom: 10%;
 }
 
+
 // MEDIA QUERIES
 @media screen and (max-width: 944px) 
 {   
     .container {
-    flex-direction: column;
+        align-items: center;
+        
     }
 
     .menu_note {
-        margin-bottom: 5%;
-        height: 5em;
+        
     }
-    
  }
 
 
+
+@media screen and (max-width: 570px)
+{
+    .container {
+        flex-direction: column;
+    }
+
+    .menu_note {
+        margin-top: 20%;
+        margin-bottom: 25%;
+    }
+
+    .menu_delice {
+        margin-top: 15%;
+        margin-bottom: 25%;
+    }
+}
 
 
 
@@ -121,6 +138,7 @@ header{
     box-shadow: $box-shadow;
     background-color: #fff5fe;
     text-decoration: none;
+    height: 23em;
 }
 
 .card-title2 {
@@ -191,6 +209,9 @@ header{
 
 // Prochainement
 #next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-bottom: 10%;
 }
@@ -200,7 +221,6 @@ header{
     color: $color-secondary;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: bold;
-    display: inline-block;
     width: 25%;
     text-align: center;
     padding: 1%;
@@ -915,8 +935,11 @@ article h1{
 
 .mentions_content {
     margin: 8%;
-    text-align: center;
+    text-align: justify;
     font-size: 1.1em;
+    h2 {
+        text-align: center;
+    }
 }
 
 
