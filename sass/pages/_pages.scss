@@ -1,0 +1,705 @@
+/* !!! LA NOTE ENCHANTEE !!! */
+// Note et titre h2 "La note enchantée"
+.menu_home1 {
+    font-family: 'Kalam';
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: #fcdfdb;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $box-shadow;
+    @media screen and (max-width: 944px) {
+        width: 80%;
+        margin-top: 4%;
+        margin-bottom: 15%;
+    }
+    @media screen and (max-width: 570px) {
+        width: 90%;
+        margin-top: 1%;
+        margin-bottom: 20%;
+    }
+}
+
+.menu_title1 {
+    margin-top: 10%;
+    margin-bottom: 8%;
+    line-height: 3%;
+    i{
+        font-size: 5em;
+    }
+}
+
+.menu_title1_title{
+    font-weight: normal;
+    font-size: 4em;
+    font-family: 'Devonshire', cursive;
+    @media screen and (max-width: 944px) {
+        font-size: 3.2em;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 2.3em;
+    }
+}
+
+.note_music-menu1 {
+    width: 10%;
+}
+
+// Ligne de séparation
+
+.menu_content1 {
+    display: flex;
+    justify-content: center;
+    line-height: 5%;
+    width: 65%;
+    margin: auto;
+}
+
+.trait_note {
+    width: 30%;
+    height: 5%;
+}
+
+.line1 {
+    position: relative;
+    padding-bottom: 3%;
+    margin: auto;
+    @media screen and (max-width: 570px) {
+        line-height: 100%;
+        font-size: 1em;
+        padding-bottom: 0;
+    }
+}
+   
+.line1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    transition: width 400ms ease-in-out;
+    background: #3c1218;
+    @media screen and (max-width: 570px) {
+        display: none;
+    }
+}
+   
+.line1:hover:after {
+    width: 100%;
+}
+
+
+// PART Menu
+.menu_entree {
+    width: 65%;
+    margin: auto;
+    padding-bottom: 3%;
+    line-height: 60%;
+    @media screen and (max-width: 1280px)
+    {
+        width: 90%;
+    }     
+    @media screen and (max-width: 944px) {
+        line-height: 80%;
+        width: 90%;
+        text-align: justify;
+    } 
+    @media screen and (max-width: 570px) {
+        width: 90%;
+        line-height: 80%;
+        font-size: 1em;
+        padding-bottom: 10%;
+    }
+}
+
+.contenu_entree1 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 944px) {
+        line-height: 100%;
+    }
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2em;
+    @media screen and (max-width: 944px) {
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    @media screen and (max-width: 570px) {
+        margin-right: 5%;
+        font-size: 1.1em;
+    }
+  }
+
+.final_note{
+    font-family: 'Devonshire', cursive;
+    font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+    margin: 5%;
+    @media screen and (max-width: 944px) {
+        font-size: 2.6em;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 2em;
+    }
+    .note_music-menu2 {
+        width: 5%;
+        height: auto;
+        @media screen and (max-width: 944px) {
+            width: 9%;
+            padding-right: 2%;
+        }
+        @media screen and (max-width: 570px) {
+            width: 8%;
+            padding-right: 2%;
+        }
+    }
+}
+
+
+
+  /* !!! LE CHIC A LA FRANCAISE !!! */ 
+
+.menu_home2 {
+    font-family: 'Libre Baskerville', serif;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding-bottom: 7%;
+    text-align: center;
+    background-color: #fff5fe;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $box-shadow;
+    @media screen and (max-width: 1280px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 944px) {
+        width: 80%;
+        text-align: left;
+    } 
+    @media screen and (max-width: 570px) {
+        width: 90%;
+        text-align: left;
+        margin-bottom: 20%;
+    }
+}
+
+.menu_title2{
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-size: 2em;
+    background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media screen and (max-width: 944px) {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: .9em;
+        text-align: center;
+    }
+}
+
+.trait_chic {
+    width: 30%;
+    height: 100%;
+    @media screen and (max-width: 944px) {
+        width: 20%;
+    } 
+    @media screen and (max-width: 570px) {
+        width: 15%;
+    }
+}
+
+.contenu_entree2 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 944px) {
+        font-size: .9em;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: .7em;
+    }
+}
+
+
+// Menu chic part 1
+.menu_content2{
+    display: flex;
+    line-height: 5%;
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    @media screen and (max-width: 944px) {
+        font-size: .9em; 
+    }
+}
+
+.menu2_part1 {
+    color: #c67412;
+}
+
+.line2_p1 {
+    position: relative;
+    padding-bottom: 2%;
+    margin: auto;
+    @media screen and (max-width: 944px) {
+        
+    } 
+    @media screen and (max-width: 570px) {
+        font-size: .9em;
+    }
+  }
+   
+  .line2_p1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    background: #c67412;
+    transition: width 400ms ease-in-out;
+    @media screen and (max-width: 944px) {
+        height: .2vh;
+    } 
+    @media screen and (max-width: 570px) {
+        display: none;
+    }
+  }
+   
+  .line2_p1:hover:after {
+    width: 100%;
+  }
+
+// Menu chic part 2
+.menu2_part2 {
+    color: #a56799;
+}
+
+.line2_p2 {
+    position: relative;
+    padding-bottom: 2%;
+    margin: auto;
+    @media screen and (max-width: 570px) {
+        font-size: .9em;
+    }
+  }
+   
+  .line2_p2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    background: #a56799;
+    transition: width 400ms ease-in-out;
+    @media screen and (max-width: 944px) {
+        height: .2vh;
+    } 
+    @media screen and (max-width: 570px) {
+        display: none;
+    }
+  }
+   
+  .line2_p2:hover:after {
+    width: 100%;
+  }
+
+// Menu chic part 3
+.menu2_part3 {
+    color: #6e4ccc;
+}
+
+.line2_p3 {
+    position: relative;
+    padding-bottom: 2%;
+    margin: auto;
+    @media screen and (max-width: 570px) {
+        font-size: .9em;
+    }
+  }
+   
+  .line2_p3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    background: #6e4ccc;
+    transition: width 400ms ease-in-out;
+    @media screen and (max-width: 944px) {
+       height: .2vh; 
+    } 
+    @media screen and (max-width: 570px) {
+        display: none;
+    }
+  }
+   
+  .line2_p3:hover:after {
+    width: 100%;
+  }
+
+
+
+/* !!! LE DELICE DES PAPILLES !!! */
+
+.menu_home3 {
+    font-family: 'Libre Baskerville', serif;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding-bottom: 7%;
+    text-align: center;
+    background-color: #edefef;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px -1px 34px -7px grey;
+    @media screen and (max-width: 944px) {
+        width: 80%;
+        margin-bottom: 20%;
+    }
+    @media screen and (max-width: 570px) {
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 25%;
+    }
+}
+
+.menu_title3 {
+    font-family: 'Dancing Script', cursive;
+    color: #0887fb;
+    font-size: 3em;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    background: linear-gradient(135deg, #0887fb,#3d95e7, #a1c7eb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media screen and (max-width: 1280px) {
+        font-size: 2.3em;
+    }
+    @media screen and (max-width: 944px) {
+        font-size: 1.8em;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 1.3em;
+    }
+}
+
+.trait_delice {
+    width: 35%;
+    height: 5%;
+    @media screen and (max-width: 1280px) {
+        width: 30%;
+    }
+    @media screen and (max-width: 944px) {
+        width: 25%;
+    }
+    @media screen and (max-width: 570px) {
+        width: 15%;
+    }
+}
+
+.contenu_entree3 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.3em;
+    @media screen and (max-width: 944px) {
+        font-size: 1.2em;
+        line-height: 100%;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 1em;
+    }
+}
+
+.menu_content3 {
+    display: flex;
+    line-height: 5%;
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+
+// Menu délice part 1
+.line3_p1  {
+    position: relative;
+    padding-bottom: 2%;
+    margin: auto;
+    @media screen and (max-width: 944px) {
+        font-size: 1.1em;
+        padding-bottom: 4%;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 1em;
+        padding-bottom: 0;
+    }
+  }
+   
+  .line3_p1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    background: #0228dd;
+    transition: width 400ms ease-in-out;
+    @media screen and (max-width: 570px) {
+        display: none;
+    }
+  }
+   
+  .line3_p1:hover:after {
+    width: 100%;
+  }
+
+// Menu délice part 2 
+.line3_p2  {
+    position: relative;
+    padding-bottom: 2%;
+    margin: auto;
+    @media screen and (max-width: 944px) {
+        font-size: 1.1em;
+        padding-bottom: 4%;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 1em;
+        padding-bottom: 0;
+    }
+  }
+   
+  .line3_p2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    background: #0670f3;
+    transition: width 400ms ease-in-out;
+    @media screen and (max-width: 570px) {
+        display: none;
+    }
+  }
+   
+  .line3_p2:hover:after {
+    width: 100%;
+  }
+
+// Menu délice part 3 
+.line3_p3  {
+    position: relative;
+    padding-bottom: 2%;
+    margin: auto;
+    @media screen and (max-width: 944px) {
+        font-size: 1.1em;
+        padding-bottom: 4%;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 1em;
+        padding-bottom: 0;
+    }
+  }
+   
+  .line3_p3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    background: #229df9;
+    transition: width 400ms ease-in-out;
+    @media screen and (max-width: 570px) {
+        display: none;
+    }
+  }
+   
+  .line3_p3:hover:after {
+    width: 100%;
+  }
+
+
+
+/* !!! LA PALETTE DU GOUT !!! */ 
+
+.menu_home4 {
+    font-family: 'Kaushan Script', cursive;
+    background-color: #fdfffd;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding-bottom: 7%;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $box-shadow;
+    @media screen and (max-width: 1280px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 944px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 570px) {
+        width: 90%;
+        margin-bottom: 20%;
+    }
+}
+
+.menu_title4 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3em;
+    margin-top: 4%;
+    background: linear-gradient(135deg, #3d923a, #beff7f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    @media screen and (max-width: 1280px) {
+        font-size: 2.3em;
+    }
+    @media screen and (max-width: 944px) {
+        font-size: 1.9em;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 1.3em;
+    }
+}
+
+.trait_palette {
+    width: 30%;
+    height: 3vh;
+    @media screen and (max-width: 944px) {
+        width: 25%;
+    }
+    @media screen and (max-width: 570px) {
+        width: 15%;
+    }
+}
+
+.contenu_entree4 {
+    font-family: 'Tillana', cursive;
+    font-size: 1.2em;
+    font-weight: normal;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    @media screen and (max-width: 944px) {
+        font-size: 1.1em;
+        line-height: 100%;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 1em;
+    }
+}
+
+.line4 {
+    position: relative;
+    padding-bottom: 4%;
+    margin: auto;
+    @media screen and (max-width: 570px) {
+        font-size: 1em;
+    }
+}
+
+.menu_content4 {
+    display: flex;
+    line-height: 5%;
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+   
+.line4:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .5vh;
+    background: #3c1218;
+    transition: width 400ms ease-in-out;
+    @media screen and (max-width: 570px) {
+        display: none;
+    }
+}
+   
+.line4:hover:after {
+    width: 100%;
+}
+
+
+
+/* !!! MENTIONS LEGALES !!! */ 
+
+#mentions_bloc {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5%;
+    @media screen and (max-width: 1280px) {
+        width: 70%;
+    }
+    @media screen and (max-width: 944px) {
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    @media screen and (max-width: 570px) {
+        width: 90%;
+        margin-bottom: 10%;
+        line-height: 100%;
+    }
+    .mentions_title {
+        font-size: 2em;
+        text-align: center;
+        @media screen and (max-width: 944px) {
+            font-size: 1.5em;
+        }
+        @media screen and (max-width: 570px) {
+            font-size: 1.3em;
+            margin-top: 15%;
+        }
+    }
+}
+
+.mentions_content {
+    margin: 8%;
+    text-align: justify;
+    font-size: 1.1em;
+    @media screen and (max-width: 944px) {
+        font-size: .9em;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: .8em;
+    }
+    h2 {
+        text-align: center;
+    }
+}

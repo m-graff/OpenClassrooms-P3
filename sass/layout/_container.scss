@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 5%;
+    text-align: center;
+    @media screen and (max-width: 944px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 570px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card-contenu {
+    width: 40vh;
+}
+
+// Carte "La note enchantée"
+.menu_note {
+    display: flex;
+    align-items: center;
+    box-shadow: $box-shadow;
+    background-color: #fcdfdb;
+    text-decoration: none;
+    height: 23em;
+    @media screen and (max-width: 944px) {
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+    @media screen and (max-width: 570px) {
+        margin-top: 10%;
+        margin-bottom: 15%; 
+    }
+    .note_music {
+        width: 15%;
+    }
+}
+
+.card-title1 {
+    font-family: 'Devonshire', cursive;
+    font-weight: normal;
+    color: #3d1319;
+    line-height: 5%;
+        &--menu{
+            font-family: 'Kalam', cursive, sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+            color: #3d1319;
+    } 
+}
+
+
+// Carte "Le chic à la française" 
+.menu_chic {
+    display: flex;
+    align-items: center;
+    box-shadow: $box-shadow;
+    background-color: #fff5fe;
+    text-decoration: none;
+    height: 23em;
+}
+
+.card-title2 {
+    font-family: 'Croissant One', cursive;
+    font-weight: normal;
+    font-size: 1.2em;
+    background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+        &--menu {
+            font-family: 'PT Serif Caption', serif;
+            color: #c77412;
+            font-size: 2em;
+            font-weight: bold;
+        }
+}
+
+ 
+// Carte "Le délice des papilles" 
+.menu_delice {
+    display: flex;
+    align-items: center;
+    height: 23em;
+    box-shadow: $box-shadow;
+    background-color: #edefef;
+    text-decoration: none;
+    @media screen and (max-width: 944px) {
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    @media screen and (max-width: 570px) {
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+}
+
+.card-title3 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: normal;
+    font-size: 1.5em;
+        &--menu {
+            font-family: 'Kalam', cursive, sans-serif;
+            font-size: 2em;
+            color: #0887fb;
+    }  
+}
+
+
+// Carte "La palette du goût"
+.menu_palette {
+    display: flex;
+    align-items: center;
+    height: 23em;
+    box-shadow: $box-shadow;
+    background-color: #fdfffd;
+    text-decoration: none;
+    color: #72bf56;
+}
+
+.card-title4 {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: normal;
+    font-size: 1.5em;
+    background: linear-gradient(135deg, #3d923a, #beff7f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+        &--menu {
+            font-family: 'Kalam', cursive, sans-serif;
+            font-size: 2em;
+            color: #72bf56;
+        }
+}

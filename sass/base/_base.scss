@@ -1,0 +1,42 @@
+// MEDIA QUERIES
+/* Extra large devices (large laptops and desktops) */
+@media screen and (max-width: 1280px) {
+    
+}
+
+/* Large devices (laptops/desktops) */
+@media screen and (max-width: 944px) {   
+   
+}
+
+/* Small devices (portrait tablets and large phones) */
+@media screen and (max-width: 570px) {
+    
+}
+
+body {
+    margin: 0;
+}
+
+// Titre générique menu
+article h1{
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+    font-size: 2em;
+    @media screen and (max-width: 944px) {
+        font-size: 1.6em;
+    }
+    @media screen and (max-width: 570px) {
+        font-size: 1.3em;
+    }
+}
+
+/* Prefixed */ 
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+}
