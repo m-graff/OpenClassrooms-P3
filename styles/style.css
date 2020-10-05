@@ -1,6 +1,15 @@
 /* Extra large devices (large laptops and desktops) */
 /* Large devices (laptops/desktops) */
 /* Small devices (portrait tablets and large phones) */
+/* Prefixed */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+}
+
 /* !!! Index !!! */
 body {
   margin: 0;
@@ -56,13 +65,12 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: auto;
   padding-bottom: 5%;
   text-align: center;
-  width: 41%;
 }
 
 @media screen and (max-width: 944px) {
@@ -109,15 +117,15 @@ header a {
 
 @media screen and (max-width: 944px) {
   .menu_note {
-    margin-top: 20%;
-    margin-bottom: 25%;
+    margin-top: 5%;
+    margin-bottom: 15%;
   }
 }
 
 @media screen and (max-width: 570px) {
   .menu_note {
-    margin-top: 20%;
-    margin-bottom: 25%;
+    margin-top: 10%;
+    margin-bottom: 15%;
   }
 }
 
@@ -186,15 +194,15 @@ header a {
 
 @media screen and (max-width: 944px) {
   .menu_delice {
-    margin-top: 15%;
-    margin-bottom: 25%;
+    margin-top: 10%;
+    margin-bottom: 15%;
   }
 }
 
 @media screen and (max-width: 570px) {
   .menu_delice {
-    margin-top: 15%;
-    margin-bottom: 25%;
+    margin-top: 10%;
+    margin-bottom: 15%;
   }
 }
 
@@ -437,6 +445,7 @@ article h1 {
   font-family: 'Kalam';
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 10%;
   padding-bottom: 5%;
   text-align: center;
   background-color: #fcdfdb;
@@ -663,6 +672,7 @@ article h1 {
   font-family: 'Libre Baskerville', serif;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 10%;
   padding-bottom: 7%;
   text-align: center;
   background-color: #fff5fe;
@@ -918,6 +928,7 @@ article h1 {
   font-family: 'Libre Baskerville', serif;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 10%;
   padding-bottom: 7%;
   text-align: center;
   background-color: #edefef;
@@ -1170,6 +1181,7 @@ article h1 {
   background-color: #fdfffd;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 10%;
   padding-bottom: 7%;
   text-align: center;
   -ms-flex-line-pack: center;
@@ -1388,16 +1400,4 @@ article h1 {
 .mentions_content h2 {
   text-align: center;
 }
-
-/* 
-@mixin line-menu {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: .5vh;
-    transition: width 400ms ease-in-out;
-}
-*/
 /*# sourceMappingURL=style.css.map */
