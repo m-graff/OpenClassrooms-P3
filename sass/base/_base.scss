@@ -19,10 +19,11 @@ body {
 }
 
 // Titre générique menu
-article h1{
+section h2{
     font-family: "Open Sans",sans-serif;
     text-align: center;
     font-size: 2em;
+    margin-top: 3%;
     @media screen and (max-width: 944px) {
         font-size: 1.6em;
     }

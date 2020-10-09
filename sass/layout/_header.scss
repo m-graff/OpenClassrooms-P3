@@ -1,6 +1,7 @@
 /* !!! Index !!! */ 
 
-header{
+header h1{
+    margin: auto;
     font-family: "Arial black";
     font-weight: bold;
     display: flex;
@@ -9,7 +10,7 @@ header{
     width: 100%;
     background-color: $color-primary;
     font-size: 4em;
-    margin-bottom: 5%;
+    
     a{
         margin: auto;
         padding: 2%;
@@ -30,4 +31,5 @@ header{
     min-width: 100%;
     height: 5vh;
     border: 0;
+    margin-bottom: 3%;
 }

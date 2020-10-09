@@ -5,20 +5,21 @@ body {
   margin: 0;
 }
 
-article h1 {
+section h2 {
   font-family: "Open Sans",sans-serif;
   text-align: center;
   font-size: 2em;
+  margin-top: 3%;
 }
 
 @media screen and (max-width: 944px) {
-  article h1 {
+  section h2 {
     font-size: 1.6em;
   }
 }
 
 @media screen and (max-width: 570px) {
-  article h1 {
+  section h2 {
     font-size: 1.3em;
   }
 }
@@ -33,7 +34,8 @@ article h1 {
 }
 
 /* !!! Index !!! */
-header {
+header h1 {
+  margin: auto;
   font-family: "Arial black";
   font-weight: bold;
   display: -webkit-box;
@@ -47,10 +49,9 @@ header {
   width: 100%;
   background-color: #579c87;
   font-size: 4em;
-  margin-bottom: 5%;
 }
 
-header a {
+header h1 a {
   margin: auto;
   padding: 2%;
   text-decoration: none;
@@ -58,13 +59,13 @@ header a {
 }
 
 @media screen and (max-width: 944px) {
-  header a {
+  header h1 a {
     font-size: .9em;
   }
 }
 
 @media screen and (max-width: 570px) {
-  header a {
+  header h1 a {
     font-size: .6em;
   }
 }
@@ -77,6 +78,12 @@ header a {
   min-width: 100%;
   height: 5vh;
   border: 0;
+  margin-bottom: 3%;
+}
+
+#bloc_page {
+  width: 50%;
+  margin: auto;
 }
 
 .container {
@@ -86,8 +93,7 @@ header a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: auto;
-  padding-bottom: 5%;
+  padding-bottom: 6%;
   text-align: center;
 }
 
@@ -281,7 +287,6 @@ footer {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: bold;
   font-size: 2em;
-  margin-top: 5%;
   padding: 1.3%;
   background-color: #579c87;
 }
@@ -363,7 +368,7 @@ footer a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 .btn {
@@ -381,6 +386,7 @@ footer a {
 @media screen and (max-width: 944px) {
   .btn {
     width: 80%;
+    margin-bottom: 8%;
   }
 }
 
@@ -528,6 +534,7 @@ footer a {
 }
 
 .line1 {
+  font-size: 1.4em;
   position: relative;
   padding-bottom: 3%;
   margin: auto;
@@ -796,6 +803,7 @@ footer a {
 }
 
 .line2_p1 {
+  font-size: 1.2em;
   position: relative;
   padding-bottom: 2%;
   margin: auto;
@@ -840,6 +848,7 @@ footer a {
 }
 
 .line2_p2 {
+  font-size: 1.2em;
   position: relative;
   padding-bottom: 2%;
   margin: auto;
@@ -884,6 +893,7 @@ footer a {
 }
 
 .line2_p3 {
+  font-size: 1.2em;
   position: relative;
   padding-bottom: 2%;
   margin: auto;
@@ -1050,6 +1060,9 @@ footer a {
 }
 
 .line3_p1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.4em;
+  font-weight: normal;
   position: relative;
   padding-bottom: 2%;
   margin: auto;
@@ -1092,6 +1105,9 @@ footer a {
 }
 
 .line3_p2 {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.4em;
+  font-weight: normal;
   position: relative;
   padding-bottom: 2%;
   margin: auto;
@@ -1134,6 +1150,9 @@ footer a {
 }
 
 .line3_p3 {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.4em;
+  font-weight: normal;
   position: relative;
   padding-bottom: 2%;
   margin: auto;
@@ -1289,6 +1308,9 @@ footer a {
 }
 
 .line4 {
+  font-family: 'Tillana', cursive;
+  font-size: 1.4em;
+  font-weight: normal;
   position: relative;
   padding-bottom: 4%;
   margin: auto;
@@ -1338,6 +1360,8 @@ footer a {
   width: 50%;
   margin: auto;
   padding-bottom: 5%;
+  margin-top: 5%;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1397,7 +1421,7 @@ footer a {
   }
 }
 
-.mentions_content h2 {
+.mentions_content h3 {
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

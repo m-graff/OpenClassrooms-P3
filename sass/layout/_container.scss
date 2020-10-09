@@ -1,8 +1,15 @@
+#bloc_page {
+    width: 50%;
+    margin: auto;
+    @media screen and (max-width: 944px) {
+        
+    }
+}
+
 .container {
     display: flex;
     justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 5%;
+    padding-bottom: 6%;
     text-align: center;
     @media screen and (max-width: 944px) {
         flex-direction: column;

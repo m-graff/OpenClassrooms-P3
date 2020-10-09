@@ -65,6 +65,7 @@
 }
 
 .line1 {
+    font-size: 1.4em;
     position: relative;
     padding-bottom: 3%;
     margin: auto;
@@ -256,6 +257,7 @@
 }
 
 .line2_p1 {
+    font-size: 1.2em;
     position: relative;
     padding-bottom: 2%;
     margin: auto;
@@ -294,6 +296,7 @@
 }
 
 .line2_p2 {
+    font-size: 1.2em;
     position: relative;
     padding-bottom: 2%;
     margin: auto;
@@ -329,6 +332,7 @@
 }
 
 .line2_p3 {
+    font-size: 1.2em;
     position: relative;
     padding-bottom: 2%;
     margin: auto;
@@ -447,6 +451,9 @@
 
 // Menu délice part 1
 .line3_p1  {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.4em;
+    font-weight: normal;
     position: relative;
     padding-bottom: 2%;
     margin: auto;
@@ -480,6 +487,9 @@
 
 // Menu délice part 2 
 .line3_p2  {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.4em;
+    font-weight: normal;
     position: relative;
     padding-bottom: 2%;
     margin: auto;
@@ -513,6 +523,9 @@
 
 // Menu délice part 3 
 .line3_p3  {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.4em;
+    font-weight: normal;
     position: relative;
     padding-bottom: 2%;
     margin: auto;
@@ -620,6 +633,9 @@
 }
 
 .line4 {
+    font-family: 'Tillana', cursive;
+    font-size: 1.4em;
+    font-weight: normal;
     position: relative;
     padding-bottom: 4%;
     margin: auto;
@@ -664,6 +680,8 @@
     width: 50%;
     margin: auto;
     padding-bottom: 5%;
+    margin-top: 5%;
+    font-size: 1em;
     @media screen and (max-width: 1280px) {
         width: 70%;
     }
@@ -699,7 +717,7 @@
     @media screen and (max-width: 570px) {
         font-size: .8em;
     }
-    h2 {
+    h3 {
         text-align: center;
     }
 }
